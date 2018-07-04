@@ -10,10 +10,10 @@ project(projectrogue CXX)
 add_executable(projectrogue src/projectrogue.cpp src/projectrogue.h)
 
 # Minimum required CMake version
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.11)
 
 # Compile features
-target_compile_features(projectrogue PRIVATE cxx_std_11)
+target_compile_features(projectrogue PRIVATE cxx_std_17)
 
 # Header include directories
 target_include_directories(projectrogue PRIVATE
